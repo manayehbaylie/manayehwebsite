@@ -6,6 +6,7 @@ import ContactPage from "./ContactPage.jsx";
 import LoginPage from "./personal web/login.jsx";
 import NotFoundPage from "./NotFoundPage.jsx";
 import Footer from "./Footer.jsx";
+import ProjectsPage from "./ProjectsPage.jsx";
 
 export default function App() {
   return (
@@ -16,19 +17,22 @@ export default function App() {
             Manayeh
           </NavLink>
           <nav className="nav-links">
-            <NavLink to="/" end className="nav-link">
+            <NavLink to="/" end className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
               Home
             </NavLink>
-            <NavLink to="/gallery" className="nav-link">
+            <NavLink to="/gallery" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
               Gallery
             </NavLink>
-            <NavLink to="/about" className="nav-link">
+            <NavLink to="/projects" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
+              Projects
+            </NavLink>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
               About
             </NavLink>
-            <NavLink to="/contact" className="nav-link">
+            <NavLink to="/contact" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
               Contact
             </NavLink>
-            <NavLink to="/login" className="nav-link">
+            <NavLink to="/login" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
               Login
             </NavLink>
           </nav>
@@ -38,6 +42,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<LoginPage />} />

@@ -90,9 +90,17 @@ button {
   transition: color 0.2s ease;
 }
 
-.nav-link.active,
 .nav-link:hover {
   color: #38bdf8;
+}
+
+.nav-link.active {
+  color: #020617;
+  background: linear-gradient(90deg, #38bdf8, #60a5fa);
+  padding: 0.55rem 0.9rem;
+  border-radius: 9999px;
+  font-weight: 800;
+  box-shadow: 0 8px 20px rgba(56,189,248,0.14);
 }
 
 .page-shell {
@@ -132,6 +140,23 @@ button {
   margin-top: 1.75rem;
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-left {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+}
+
+.hero-right {
+  text-align: left;
+}
+
 .page-hero {
   position: relative;
   display: grid;
@@ -147,7 +172,24 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.28;
+  opacity: 0.18;
+}
+
+.hero-grid { position: relative; z-index: 8; }
+
+.hero-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 5px solid rgba(255,255,255,0.12);
+  box-shadow: 0 28px 60px rgba(2,6,23,0.7);
+  margin: 0;
+  display: block;
+  position: relative;
+  left: 0;
+  z-index: 12;
 }
 
 .hero-copy {
@@ -318,6 +360,7 @@ button {
   border-radius: 1.5rem;
   box-shadow: 0 32px 80px rgba(15, 23, 42, 0.24);
   object-fit: cover;
+  object-position: center 20%;
 }
 
 .image-copy {
@@ -581,6 +624,13 @@ footer h2,
     flex-direction: column;
     align-items: stretch;
   }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-right { text-align: center; }
 
   .nav-links,
   .footer-links {
