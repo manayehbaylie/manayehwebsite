@@ -3,7 +3,6 @@ import HomePage from "./HomePage.jsx";
 import AboutPage from "./AboutPage.jsx";
 import GalleryPage from "./GalleryPage.jsx";
 import ContactPage from "./ContactPage.jsx";
-import LoginPage from "./personal web/login.jsx";
 import NotFoundPage from "./NotFoundPage.jsx";
 import Footer from "./Footer.jsx";
 import ProjectsPage from "./ProjectsPage.jsx";
@@ -32,9 +31,6 @@ export default function App() {
             <NavLink to="/contact" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
               Contact
             </NavLink>
-            <NavLink to="/login" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
-              Login
-            </NavLink>
           </nav>
         </div>
       </header>
@@ -45,7 +41,6 @@ export default function App() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
