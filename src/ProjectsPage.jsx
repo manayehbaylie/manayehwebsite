@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import projectThumb from "./assets/man/New folder/photo_2026-04-28_11-41-06.jpg";
+import projectThumb from "./assets/man/New folder/photo_2026-04-28_11-41-40.jpg";
+import ecomImg from "./assets/man/New folder/Screenshot 2026-06-21 214218.png";
 
 const ProjectsPage = () => {
   const projects = [
@@ -13,9 +14,9 @@ const ProjectsPage = () => {
     },
     {
       id: 2,
-      title: "E-Commerce Website",
+      title: "Hotel management system",
       tech: "Node · Express",
-      img: projectThumb,
+      img: ecomImg,
       live: "#",
       repo: "#",
     },
@@ -47,7 +48,8 @@ const ProjectsPage = () => {
               <div className="gallery-meta">
                 <span>{p.tech}</span>
                 <h3>{p.title}</h3>
-                <div style={{marginTop: '0.75rem'}}>
+                <div style={{marginTop: '0.75rem'}}
+                >
                   <a className="button button-primary" href={p.live}>Live Demo</a>
                   <a className="button button-secondary" href={p.repo} style={{marginLeft: '0.5rem'}}>GitHub</a>
                 </div>

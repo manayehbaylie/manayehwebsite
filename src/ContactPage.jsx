@@ -6,10 +6,13 @@ const ContactPage = () => {
       <section className="page-hero contact-hero">
         <div className="hero-copy">
           <span className="section-tag">Contact</span>
-          <h1 className="section-title">Let’s make something great together.</h1>
+          <h1 className="section-title">Let’s connect and learn together.</h1>
           <p className="section-copy">
-            Reach out for collaborations, commissions, or creative partnerships. I’m available to help
-            with website builds, photo projects, and visual storytelling.
+            I’m a Computer Science student (CS department) building skills in web development,
+            algorithms, and software engineering. This site showcases coursework, learning projects,
+            and experiments — not professional services. I’m open to internship opportunities,
+            collaborative learning, and mentorship conversations. Prefer contact via Telegram
+            @manayeh or email manayehtenaw@gmail.com.
           </p>
         </div>
       </section>
@@ -19,7 +22,14 @@ const ContactPage = () => {
           <h2>Contact details</h2>
           <div className="contact-line">
             <MapPin size={18} />
-            <span>Remote / Global</span>
+            <a
+              href="https://t.me/manayeh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-link"
+            >
+              Telegram — @manayeh
+            </a>
           </div>
           <div className="contact-line">
             <Mail size={18} />
@@ -42,7 +52,10 @@ const ContactPage = () => {
           </label>
           <label>
             Message
-            <textarea rows="5" placeholder="Tell me about your project" />
+            <textarea
+              rows="5"
+              placeholder="Your current studies, interests, or internship goals"
+            />
           </label>
           <button type="submit" className="button button-primary submit-button">
             Send message <Send size={18} />

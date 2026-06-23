@@ -1,2 +1,0 @@
-# manayehwebsite
-personal website
