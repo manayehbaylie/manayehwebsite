@@ -10,7 +10,6 @@ const Footer = () => {
         </div>
         <nav className="footer-links">
           <Link to="/">Home</Link>
-          <Link to="/gallery">Gallery</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
         </nav>

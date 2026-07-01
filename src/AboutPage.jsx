@@ -28,11 +28,16 @@ const AboutPage = () => {
         <div className="feature-grid">
           <div className="feature-card">
             <h3>Languages</h3>
-            <p>C++ · Java · JavaScript · PHP</p>
+            <p>C++ </p>
+            <p>. java</p>
+            <p>. javascript</p>
+            <p>. php</p>
           </div>
           <div className="feature-card">
             <h3>Frontend</h3>
-            <p>HTML5 · CSS3 · JavaScript</p>
+            <p>. HTML5 </p>
+            <p>. css3</p>
+            <p>. javascript</p>
           </div>
           <div className="feature-card">
             <h3>Database</h3>
@@ -40,7 +45,9 @@ const AboutPage = () => {
           </div>
           <div className="feature-card">
             <h3>Tools</h3>
-            <p>Git · GitHub · VS Code</p>
+            <p>. Git </p>
+            <p>. GitHub</p>
+            <p>. VS Code</p>
           </div>
         </div>
       </section>
@@ -53,7 +60,9 @@ const AboutPage = () => {
           <div className="info-card">
             <h3>Bachelor of Computer Science</h3>
             <p>Mekdela Amba University</p>
-            <p>Activities: Academic Projects · Web Development Practice · Software Development Learning</p>
+            <p>Activities: Academic Projects  </p>
+            <p>· Web Development Practice </p>
+            <p>· Software Development Learning</p>
           </div>
         </div>
       </section>

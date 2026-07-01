@@ -1,7 +1,6 @@
 import { Routes, Route, NavLink } from "react-router-dom";
 import HomePage from "./HomePage.jsx";
 import AboutPage from "./AboutPage.jsx";
-import GalleryPage from "./GalleryPage.jsx";
 import ContactPage from "./ContactPage.jsx";
 import NotFoundPage from "./NotFoundPage.jsx";
 import Footer from "./Footer.jsx";
@@ -19,9 +18,6 @@ export default function App() {
             <NavLink to="/" end className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
               Home
             </NavLink>
-            <NavLink to="/gallery" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
-              Gallery
-            </NavLink>
             <NavLink to="/projects" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
               Projects
             </NavLink>
@@ -37,7 +33,6 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />

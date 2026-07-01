@@ -1,30 +1,31 @@
 import { Link } from "react-router-dom";
-import projectThumb from "./assets/man/New folder/photo_2026-04-28_11-41-40.jpg";
-import ecomImg from "./assets/man/New folder/Screenshot 2026-06-21 214218.png";
+import projectThumb from "./assets/man/New folder/Screenshot 2026-06-21 214218.png";
+import ecomImg from "./assets/man/New folder/Screenshot 2026-06-21 215153.png";
+import otherProjectImg from "./assets/man/New folder/photo_2026-04-28_11-41-40.jpg";
 
 const ProjectsPage = () => {
   const projects = [
     {
       id: 1,
-      title: "Personal Portfolio Website",
-      tech: "React · Vite",
+      title: "hotel management system",
+      tech: "node · Vite",
       img: projectThumb,
       live: "#",
       repo: "#",
     },
     {
       id: 2,
-      title: "Hotel management system",
-      tech: "Node · Express",
+      title: "personal portfolio website",
+      tech: "react· Express",
       img: ecomImg,
       live: "#",
       repo: "#",
     },
     {
       id: 3,
-      title: "University Management System",
+      title: "loan default prediction",
       tech: "Full Stack",
-      img: projectThumb,
+      img: otherProjectImg,
       live: "#",
       repo: "#",
     },
@@ -48,10 +49,8 @@ const ProjectsPage = () => {
               <div className="gallery-meta">
                 <span>{p.tech}</span>
                 <h3>{p.title}</h3>
-                <div style={{marginTop: '0.75rem'}}
-                >
-                  <a className="button button-primary" href={p.live}>Live Demo</a>
-                  <a className="button button-secondary" href={p.repo} style={{marginLeft: '0.5rem'}}>GitHub</a>
+                <div style={{marginTop: '0.75rem'}}>
+                  <a className="button button-secondary" href={p.repo}>GitHub</a>
                 </div>
               </div>
             </article>
